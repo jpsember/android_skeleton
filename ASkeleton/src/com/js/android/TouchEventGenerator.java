@@ -48,7 +48,7 @@ public class TouchEventGenerator implements OnTouchListener {
 
 	private void sendEvent(int type, IPoint viewPoint, int modifierFlags) {
 		UserEvent event = new UserEvent(type, mView, viewPoint, modifierFlags);
-		unimp("process event by calling a manager? " + event);
+		unimp("process event by calling a manager? " + event.getCode());
 		// event.getManager().processUserEvent(event);
 	}
 

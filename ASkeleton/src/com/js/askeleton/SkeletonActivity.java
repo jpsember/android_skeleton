@@ -1,4 +1,4 @@
-package com.js.gestapp;
+package com.js.askeleton;
 
 import com.js.android.MyActivity;
 
@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
-public class GestActivity extends MyActivity {
+public class SkeletonActivity extends MyActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

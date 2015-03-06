@@ -6,9 +6,6 @@
 
     <uses-sdk android:minSdkVersion="14"
         android:targetSdkVersion="21"  />
-
-    <!-- Required for unit tests -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"

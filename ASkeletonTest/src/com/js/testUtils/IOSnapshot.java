@@ -104,7 +104,7 @@ public class IOSnapshot {
         try {
           FileUtils.deleteDirectory(mDynamicSnapshotsDir);
         } catch (IOException e) {
-          die(e);
+          die("Failed to delete existing snapshots directory: "+e);
         }
       }
 

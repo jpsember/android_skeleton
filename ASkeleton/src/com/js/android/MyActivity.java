@@ -13,8 +13,6 @@ import static com.js.basic.Tools.*;
 
 public abstract class MyActivity extends Activity {
 
-	public static final String PREFERENCE_KEY_SMALL_DEVICE_FLAG = "small_device";
-
 	public void setLogging(boolean f) {
 		doNothingAndroid();
 		mLogging = f;

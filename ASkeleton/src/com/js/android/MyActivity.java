@@ -67,7 +67,6 @@ public abstract class MyActivity extends Activity {
   }
 
   private void prepareSystemOut() {
-    AndroidSystemOutFilter.install();
     if (sConsoleGreetingPrinted)
       return;
     sConsoleGreetingPrinted = true;

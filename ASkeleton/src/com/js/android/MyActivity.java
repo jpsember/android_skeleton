@@ -9,7 +9,6 @@ import java.util.Map;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import static com.js.basic.Tools.*;
 
 public abstract class MyActivity extends Activity {
@@ -37,7 +36,6 @@ public abstract class MyActivity extends Activity {
     }
     AppPreferences.prepare(this);
     addResourceMappings();
-    prepareDisplayMetrics();
     log("onCreate savedInstanceState=" + nameOf(savedInstanceState));
     super.onCreate(savedInstanceState);
   }
@@ -118,11 +116,6 @@ public abstract class MyActivity extends Activity {
       throw new IllegalArgumentException("no resource id mapping found for "
           + key);
     return id.intValue();
-  }
-
-  private void prepareDisplayMetrics() {
-    DisplayMetrics m = new DisplayMetrics();
-    getWindowManager().getDefaultDisplay().getMetrics(m);
   }
 
   private void addResourceMappings() {
